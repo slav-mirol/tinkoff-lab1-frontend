@@ -1,7 +1,3 @@
-br {
-  text-align: center;
-}
-
 .text-basic() {
   font: var(--font-text-s);
   color: var(--text-01);
@@ -28,7 +24,6 @@ br {
   color: var(--text-01);
   margin-bottom: 16px;
   margin-top: 0;
-  //align-items: left;
 }
 
 .text_num {
@@ -43,15 +38,6 @@ br {
 .text-hint() {
   font: var(--font-text-xs);
   color: var(--text-02);
-}
-
-.text-body-m(@type: 1) {
-  font: var(--font-text-xs);
-  color: var(--text-01);
-
-  & when(type = 2) {
-    color: var(--base-01);
-  }
 }
 
 .font(@size, @line-height: 'none', @weight: 400, @color: 'none') {

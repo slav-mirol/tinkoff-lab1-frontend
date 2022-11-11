@@ -8,6 +8,16 @@
   margin-bottom: 48px;
 }
 
+.title_for_btn {
+  .text-h2();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 76px;
+  margin-bottom: 48px;
+}
+
 .last_title {
   .text-h2();
   display: flex;
@@ -33,7 +43,6 @@
   padding: 32px;
   border-radius: var(--radius-l);
   background-color: var(--base-01);
-
   &__title {
     .text-h4();
     align-self: flex-start;
@@ -41,6 +50,7 @@
 
   &__info {
     .text-basic();
+    align-self: flex-start;
     margin: 0;
   }
 }
@@ -48,6 +58,8 @@
 *:has(.block) {
   @media @mobile {
     margin-bottom: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   @media @tablet {
@@ -67,6 +79,8 @@
   *:has(.container_spisok) {
     @media @mobile {
       margin-bottom: 24px;
+      margin-left: 5px;
+      margin-right: 5px;
     }
 
     @media @tablet {
@@ -78,7 +92,6 @@
 .image2_container {
   border-radius: var(--radius-m);
   background-color: var(--base-01);
-  //width: 720px;
   height: 360px;
 }
 
@@ -93,7 +106,7 @@
 
 .elemOfList {
   display: grid;
-  grid-template-columns: 20px 316px;
+  grid-template-columns: 20fr 316fr;
   align-items: start;
 }
 
@@ -144,6 +157,8 @@
 
 *:has(.last_block) {
   @media @mobile {
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 24px;
   }
 
