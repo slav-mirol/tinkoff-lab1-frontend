@@ -1,4 +1,4 @@
-.button {
+.button_scroll {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -15,4 +15,16 @@
   outline: inherit;
   background-color: var(--primary);
   border-radius: var(--radius-s);
+
+  &:hover {
+    background: var(--primary-hover);
+  }
+
+  &:active {
+    background: var(--primary-active);
+  }
+
+  &:focus {
+    border: 2px solid var(--base-06);
+  }
 }
