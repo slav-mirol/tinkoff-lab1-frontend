@@ -1,11 +1,11 @@
 import 'normalize.css';
 import './index.less';
 
-const $button = document.querySelector('.button_scroll');
-const $topic = document.querySelector('.title_for_btn');
+const cur_button = document.getElementById('button_scroll');
+const cur_topic = document.getElementById('title_for_btn');
 
-$button.addEventListener('click', (e) => {
-  $topic.scrollIntoView({
+cur_button.addEventListener('click', (e) => {
+  cur_topic.scrollIntoView({
     block: 'start',
     behavior: 'smooth',
   });
